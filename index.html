@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDM Consultancy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: #eee;
+        padding: 2rem;
+      }
+
+      .card {
+        background-color: #1a1a1a;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #0ff5;
+      }
+
+      h3,
+      h4 {
+        color: #0ff;
+      }
+
+      .service-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .service-list li {
+        margin-bottom: 1rem;
+      }
+
+      .service-list p {
+        margin: 0.2rem 0 0 0;
+        color: #ccc;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .toggle-btn {
+        background-color: #0ff;
+        color: #111;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      .toggle-btn:hover {
+        background-color: #0cc;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">SDM Consultancy</div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to SDM Consultancy</h1>
+          <p>Your partner in Cybersecurity, Web Design & Machine Learning</p>
+          <div class="cta-buttons">
+            <a href="services.html" class="btn primary-btn">Explore Services</a>
+            <a href="contact.html" class="btn secondary-btn">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+              <span class="icon-badge">🛡️</span>
+            </div>
+            <h3>Cybersecurity</h3>
+            <p>
+              Protect your digital assets with our advanced security solutions
+            </p>
+            <ul class="service-features">
+              <li><span class="check-icon">✓</span> Security Automation</li>
+              <li><span class="check-icon">✓</span> Risk Management</li>
+              <li><span class="check-icon">✓</span> SIEM Solutions</li>
+            </ul>
+            <a href="services.html#cybersecurity" class="feature-link"
+              >Learn More →</a
+            >
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-laptop-code"></i>
+              <span class="icon-badge">💻</span>
+            </div>
+            <h3>Web Design</h3>
+            <p>Create stunning, responsive websites that drive results</p>
+            <ul class="service-features">
+              <li><span class="check-icon">✓</span> UI/UX Design</li>
+              <li><span class="check-icon">✓</span> Responsive Development</li>
+              <li><span class="check-icon">✓</span> SEO Optimization</li>
+            </ul>
+            <a href="services.html#webdesign" class="feature-link"
+              >Learn More →</a
+            >
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-brain"></i>
+              <span class="icon-badge">🤖</span>
+            </div>
+            <h3>Machine Learning</h3>
+            <p>Harness the power of AI to transform your business</p>
+            <ul class="service-features">
+              <li><span class="check-icon">✓</span> ML Models</li>
+              <li><span class="check-icon">✓</span> Data Science</li>
+              <li><span class="check-icon">✓</span> AI Strategy</li>
+            </ul>
+            <a href="services.html#ml" class="feature-link">Learn More →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat-container">
+          <div class="stat-item">
+            <h3>100+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Support Available</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Let's discuss how we can help you achieve your goals</p>
+        <a href="contact.html" class="btn primary-btn">Start Your Journey</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>Our Address</h3>
+            <div class="address-info">
+              <p><i class="fas fa-map-marker-alt"></i> Ballupur, Dehradun</p>
+              <p>Uttarakhand </p>
+              <p>India</p>
+              <div class="contact-details">
+                <p><i class="fas fa-phone"></i> +91 9818000000</p>
+                <p><i class="fas fa-envelope"></i> info@sdmconsultancy.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section connect-section">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/company/sdm-consultancy"
+                class="social-icon linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/sdmconsultancy"
+                class="social-icon twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/sdmconsultancy"
+                class="social-icon facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/sdmconsultancy"
+                class="social-icon instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p class="copyright">&copy; 2024 SDM Consultancy. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#00ffff",
+            },
+            shape: {
+              type: "circle",
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+            },
+            size: {
+              value: 3,
+              random: true,
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#00ffff",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              repulse: {
+                distance: 100,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+      });
+    </script>
+  </body>
+</html>
